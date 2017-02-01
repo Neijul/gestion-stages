@@ -1,0 +1,37 @@
+#home .container {
+  margin-top: -150px;
+  border: 1px solid #cfd0e3;
+  background-color: #FFF;
+}
+
+#home h2 {
+  color: #8091c6;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+#intro-text {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+#table .row {
+  margin-bottom: 0px;
+}
+
+#search .input-field label.active {
+  color: #8091c6 !important;
+  transform: translateX(0) !important;
+}
+
+.btn-savoir {
+  background-color: #8091c6;
+}
+
+.btn-savoir:hover {
+  background-color: #8091c6;
+}
+
+.btn-savoir:visited {
+  background-color: #8091c6;
+}

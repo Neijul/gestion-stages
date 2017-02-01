@@ -1,0 +1,13 @@
+Schéma relationnel de la base de donnée:
+
+Entreprise(NumEntreprise*, NomEntreprise, CodePostale, Ville, Rue, Telephone, Email)
+
+Technologie(CodeTechnologie*, LibelleTechnologie)
+
+TechnologieEntreprise(#CodeStage*, #CodeTechnologie*)
+
+Domaine(CodeDomaine*, LibelleDomaine)
+
+Option(CodeOption*, LibelleOption)
+
+Stage(CodeStage*, #NumEntreprise, #CodeOption, Annee, #CodeDomaine, NomTuteur)
