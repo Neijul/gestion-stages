@@ -10,6 +10,10 @@ const router = new VueRouter({
     component: require('./components/Home/Home.vue'),
     name: 'home'
   }, {
+    path: '/gestion',
+    component: require('./components/Gestion/Gestion.vue'),
+    name: 'gestion'
+  }, {
     path: '*',
     redirect: '/'
   }]

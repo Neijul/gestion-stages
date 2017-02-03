@@ -1,6 +1,5 @@
 <template lang="html">
   <div id="home">
-    <div class="container z-depth-1">
       <div class="row">
         <div class="col s12 center">
           <h2>Bienvenue à toi étudiant !</h2>
@@ -13,7 +12,26 @@
 
       <section id="search">
         <div class="row">
-          <div class="col s12 m8 push-m2">
+          <div class="col s12 m10 push-m1">
+            <ul class="collapsible" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header center"><i class="material-icons">search</i>Rechercher</div>
+                <div class="collapsible-body">
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="col s12 m8 push-m2">
             <div class="nav-wrapper">
               <div class="input-field">
                 <input id="search" type="search" placeholder="Que voulez vous rechercher ?" required>
@@ -21,7 +39,7 @@
                 <i class="material-icons">close</i>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -31,192 +49,64 @@
             <table class="bordered centered responsive-table">
               <thead>
                 <tr>
-                    <th data-field="id">Numéro de l'entreprise</th>
-                    <th data-field="nom">Nom de l'entreprise</th>
-                    <th data-field="codePostal">Code postale</th>
+                    <th data-field="id">Stage</th>
+                    <th data-field="entreprise">Entreprise</th>
                     <th data-field="ville">Ville</th>
-                    <th data-field="rue">Rue</th>
-                    <th data-field="tel">Téléphone</th>
-                    <th data-field="email">Email</th>
+                    <th data-field="option">Option</th>
+                    <th data-field="annee">Année</th>
+                    <th data-field="sujet">Sujet</th>
                     <th data-field="action">Action</th>
                 </tr>
               </thead>
 
               <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Neilab</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>210 Rue Emile Gaboriau</td>
-                  <td>06xxxx6525</td>
-                  <td>contact@neilab.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Entre-prises</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des potiers</td>
-                  <td>04xxxx3395</td>
-                  <td>contact@entre-prises.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Neilab</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>210 Rue Emile Gaboriau</td>
-                  <td>06xxxx6525</td>
-                  <td>contact@neilab.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Entre-prises</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des potiers</td>
-                  <td>04xxxx3395</td>
-                  <td>contact@entre-prises.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Neilab</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>210 Rue Emile Gaboriau</td>
-                  <td>06xxxx6525</td>
-                  <td>contact@neilab.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Entre-prises</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des potiers</td>
-                  <td>04xxxx3395</td>
-                  <td>contact@entre-prises.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Neilab</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>210 Rue Emile Gaboriau</td>
-                  <td>06xxxx6525</td>
-                  <td>contact@neilab.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Entre-prises</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des potiers</td>
-                  <td>04xxxx3395</td>
-                  <td>contact@entre-prises.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>15</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>InfoGérence</td>
-                  <td>34000</td>
-                  <td>Montpellier</td>
-                  <td>Rue des cables</td>
-                  <td>04xxxx2285</td>
-                  <td>contact@infogerence.fr</td>
-                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">+ d'infos</a></td>
+                <tr v-for="stage in stages">
+                  <td>{{ stage.id }}</td>
+                  <td>{{ stage.entreprise }}</td>
+                  <td>{{ stage.ville }}</td>
+                  <td>{{ stage.option }}</td>
+                  <td>{{ stage.annee }}</td>
+                  <td>{{ stage.sujet }}</td>
+                  <td><a href="#!ensavoirplus" class="waves-effect btn-savoir btn">infos</a></td>
                 </tr>
               </tbody>
             </table>
           </div>
         </section>
       </div>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home'
+  name: 'home',
+  data () {
+    return {
+      stages: [{
+        id: 1,
+        entreprise: 'Entreprise',
+        ville: 'Montpellier',
+        option: 'SLAM',
+        annee: 1,
+        sujet: 'Développement web back-office PHP'
+      }, {
+        id: 2,
+        entreprise: 'Entreprise',
+        ville: 'Montpellier',
+        option: 'SISR',
+        annee: 1,
+        sujet: 'Maintenance Réseaux'
+      }, {
+        id: 3,
+        entreprise: 'Entreprise',
+        ville: 'Montpellier',
+        option: 'SLAM',
+        annee: 2,
+        sujet: 'Développement d\'une application bureau en C#'
+      }]
+    }
+  }
 }
 </script>
 
-<script src="./assets/js/home.js"></script>
 <style src="./assets/css/home.css"></style>

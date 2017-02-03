@@ -2,8 +2,8 @@
   <div id="app">
     <Nheader></Nheader>
 
-    <main>
-      <router-view></router-view>
+    <main class="container z-depth-1">
+        <router-view></router-view>
     </main>
 
     <Nfooter></Nfooter>
